@@ -5,7 +5,6 @@ const continueBtn = document.getElementById("continue-btn");
 const heartPath = document.querySelector(".heart path");
 const cards = document.querySelectorAll(".mystery-card");
 
-
 // HEART DRAWING
 
 const heartLength = heartPath.getTotalLength();
@@ -15,12 +14,8 @@ heartPath.style.strokeDashoffset = heartLength;
 
 heartPath.animate(
   [
-    {
-      strokeDashoffset: heartLength
-    },
-    {
-      strokeDashoffset: 0
-    }
+    { strokeDashoffset: heartLength },
+    { strokeDashoffset: 0 }
   ],
   {
     duration: 2800,
@@ -29,20 +24,13 @@ heartPath.animate(
   }
 );
 
-
 // HEART GLOW
 
 heartPath.animate(
   [
-    {
-      filter: "drop-shadow(0 0 3px rgba(255, 0, 0, 0.5))"
-    },
-    {
-      filter: "drop-shadow(0 0 10px rgba(255, 0, 0, 0.9))"
-    },
-    {
-      filter: "drop-shadow(0 0 3px rgba(255, 0, 0, 0.5))"
-    }
+    { filter: "drop-shadow(0 0 3px rgba(255, 0, 0, 0.5))" },
+    { filter: "drop-shadow(0 0 10px rgba(255, 0, 0, 0.9))" },
+    { filter: "drop-shadow(0 0 3px rgba(255, 0, 0, 0.5))" }
   ],
   {
     duration: 1800,
@@ -51,21 +39,17 @@ heartPath.animate(
   }
 );
 
-
 // CONTINUE BUTTON
 
-continueBtn.addEventListener("click", () => {
+continueBtn.addEventListener("click", function () {
   welcomeScreen.classList.add("hidden");
   mainScreen.classList.remove("hidden");
-
-  window.scrollTo(0, 0);
 });
-
 
 // MYSTERY CARDS
 
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
+cards.forEach(function (card) {
+  card.addEventListener("click", function () {
     card.classList.toggle("open");
   });
 });
