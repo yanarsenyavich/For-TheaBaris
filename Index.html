@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Thea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SCREEN 1: THE HEART -->
+  <section id="welcome-screen" class="screen">
+    <div class="welcome-content">
+      <div class="heart-container">
+        <svg class="heart" viewBox="0 0 200 200">
+          <path
+            d="M100 170
+               C85 150, 25 115, 25 65
+               C25 25, 75 15, 100 55
+               C125 15, 175 25, 175 65
+               C175 115, 115 150, 100 170 Z"
+          />
+        </svg>
+      </div>
+
+      <h1>WELCOME, THEA</h1>
+
+      <button id="continue-btn">CONTINUE</button>
+    </div>
+  </section>
+
+
+  <!-- SCREEN 2: THE CARDS -->
+  <section id="main-screen" class="screen hidden">
+    <div class="main-content">
+
+      <h2>HAPPY 2ND MONTHSARY!</h2>
+
+      <div class="cards-wrapper">
+
+        <!-- CARD 1 -->
+        <div class="mystery-card" data-card="letter">
+          <div class="card-inner">
+            <div class="card-front">?</div>
+
+            <div class="card-back">
+              <h3>WHAT I WANTED TO TELL YOU</h3>
+              <p>
+                YOUR MONTHSARY MESSAGE GOES HERE
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="mystery-card" data-card="reasons">
+          <div class="card-inner">
+            <div class="card-front">?</div>
+
+            <div class="card-back">
+              <h3>100 REASONS WHY I LOVE YOU</h3>
+              <p>
+                YOUR 100 REASONS GO HERE
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swipe-hint">swipe →</div>
+
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
